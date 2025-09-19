@@ -12,7 +12,7 @@
 
  echo "datahub ALL=(ALL)       NOPASSWD: ALL" >> /etc/sudoers
 
- echo "192.168.1.40 nodo.micasa.com nodo" >> /etc/hosts
+ echo "192.168.1.40 lab.micasa.com nodo" >> /etc/hosts
 
  chkconfig firewalld off
  service firewalld stop
@@ -51,5 +51,6 @@
  wget https://github.com/cli/cli/releases/download/v2.79.0/gh_2.79.0_linux_amd64.tar.gz
  gunzip gh_2.79.0_linux_amd64.tar.gz
  
+
 
  yum localinstall gh_*_linux_amd64.rpm -y
